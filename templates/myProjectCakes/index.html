@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <link rel="stylesheet" href="/static/admin/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+Hello
+<div id="root">
+<div id="block3">
+  <div class="Container">
+    <div class="block8_logo">
+      <img src="LOGO-FULL-strona.png" alt="">
+    </div>
+    <div class="block3_text">
+      Złóż zamówienie ciasta na każdą okazję!
+    </div>
+    <div class="block3_underline">
+        <img src="mysnake.png" alt="" width="70%" height="70px">
+    </div>
+    <div class="Box col-lg-10">
+
+
+        <div class="MyOrder">
+            <a href=""> <img class="Cake" src ="11-k3zoke3b.jpg"></a>
+            <div>
+                <button class="n" onclick="ShowModal('Kinder Bueno','80')">
+                Zamów
+                </button>
+           </div>
+        </div >
+
+        <div class="MyOrder">
+            <a href=""><img class="Cake" src ="15-k3zol26r.jpg"></a>
+            <div>
+                <button class="n" onclick="ShowModal('Brownie','90')">
+                    Zamów
+                </button>
+            </div>
+
+        </div>
+        <div  class="MyOrder">
+            <a href=""> <img  class="Cake" src ="4-k3zonrrj.jpg"></a>
+            <div>
+                <button class="n" onclick="ShowModal('Oreo','100')">
+                    Zamów
+                </button>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="Box col-lg-10">
+        <div class="MyOrder">
+            <a href=""> <img class="Cake" src ="6-k3zoj6ku.jpg"></a>
+            <div>
+                <button class="n" onclick="ShowModal('Sernik z kajmakiem i białą czekoladą','95')">
+                Zamów
+                </button>
+           </div>
+        </div >
+
+        <div class="MyOrder">
+            <a href=""><img class="Cake" src ="7-k3zojgsl.jpg"></a>
+            <div>
+                <button class="n" onclick="ShowModal('Sernik cytrynowy','90')">
+                    Zamów
+                </button>
+            </div>
+
+        </div>
+        <div  class="MyOrder">
+            <a href=""> <img  class="Cake" src ="8-k3zojnng.jpg"></a>
+            <div>
+                <button class="n" onclick="ShowModal('Sernik Ricotta','85')">
+                    Zamów
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="Box col-lg-10">
+        <div class="MyOrder">
+            <a href=""> <img class="Cake" src ="9-k3zojso5.jpg"></a>
+            <div>
+                <button class="n" onclick="ShowModal('Sernik białą czekoladą i malinami','95')">
+                Zamów
+                </button>
+           </div>
+        </div >
+
+        <div class="MyOrder">
+            <a href=""><img class="Cake" src ="10-k3zok28n.jpg"></a>
+            <div>
+                <button class="n" onclick="ShowModal('Sernik waniliowy','70')">
+                    Zamów
+                </button>
+            </div>
+
+        </div>
+        <div  class="MyOrder">
+            <a href=""> <img  class="Cake" src ="8-k3zojnng.jpg"></a>
+            <div>
+                <button class="n" onclick="ShowModal('Sernik Ricotta','85')">
+                    Zamów
+                </button>
+            </div>
+
+        </div>
+    </div>
+ </div>
+</div>
+</div>
+{#<script type="text/babel">#}
+{##}
+{#    class StudentList extends React.Component {#}
+{#        constructor(props) {#}
+{#            super(props);#}
+{#            this.state = {#}
+{#                items:[]#}
+{#            }#}
+{#        }#}
+{##}
+{#        componentDidMount() {#}
+{#            console.log(123)#}
+{#            fetch("http://127.0.0.1:8000/Cake/list/")#}
+{#                .then(response => response.json())#}
+{#                .then(resource => this.setState({items: resource.results}))#}
+                {#.then(resource => console.log(123))#}
+{#                  console.log(this.state.items)#}
+{#        }#}
+{##}
+{##}
+{#        render(){#}
+{#            const cake=this.state.items.map(item=>#}
+{#            <MyCake name={item.cake_name} description={item.cake_description} price={item.cake_price}/>#}
+{#             );#}
+{##}
+{#            return(#}
+{#                <div>#}
+{#                    {cake}#}
+{#                </div>#}
+{#            )#}
+{##}
+{#        }#}
+{#    }#}
+{##}
+{#    class MyCake extends React.Component {#}
+{##}
+{#        constructor(props) {#}
+{#            super(props);#}
+{##}
+{#        }#}
+{#        render(){#}
+{#            return(#}
+{#                <div>#}
+{#                  <div className="MyOrder">#}
+{#                  <div>#}
+{#                      <button className="n" onclick="ShowModal('Kinder Bueno','80')">#}
+{#                      Zamów#}
+{#                      </button>#}
+{#                  </div>#}
+{#                  </div>#}
+{#                </div>#}
+{#                  )#}
+{#          }#}
+{#      }#}
+{##}
+{##}
+{##}
+{#      ReactDOM.render(#}
+{#          <StudentList />,#}
+{#        document.getElementById('root')#}
+{#      );#}
+
+    {#</script>#}
+</body>
+</html>
